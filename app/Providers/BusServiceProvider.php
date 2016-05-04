@@ -18,8 +18,8 @@ class BusServiceProvider extends ServiceProvider
         
             return Dispatcher::simpleMapping(
                 $command,
-                'App\Commands',
-                'App\Handlers\Commands'
+                App\Commands::class,
+                App\Handlers\Commands::class
             );
         });
     }
